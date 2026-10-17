@@ -1,0 +1,8 @@
+# Consistent line endings on every OS (important for the shell-free Python scripts and for Windows users)
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.parquet binary
+*.xlsx binary

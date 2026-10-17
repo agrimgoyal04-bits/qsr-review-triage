@@ -1,0 +1,26 @@
+# Tested on Python 3.12 (Linux x86_64, CPU). Python 3.10-3.12 recommended.
+# GPU: Apple Silicon (MPS) works with this pin. NVIDIA/CUDA: on Windows install a CUDA build of torch
+# from https://pytorch.org/get-started/locally/ (the default Windows pip wheel is CPU-only).
+accelerate==1.15.0
+fastapi==0.143.3
+httpx==0.28.1
+huggingface_hub==2.2.0
+numpy==2.5.4
+onnx==1.23.2
+onnxruntime==1.31.0
+onnxscript==0.7.2
+openpyxl==3.1.5
+pandas==3.0.6
+protobuf==7.36.2
+pyarrow==26.0.0
+pydantic==2.14.1
+pytest==9.1.1
+requests==2.34.2
+safetensors==0.8.0
+scikit-learn==1.9.1
+sentencepiece==0.2.2
+streamlit==1.66.0
+tokenizers==0.23.3
+torch==2.14.1
+transformers==5.20.1
+uvicorn==0.54.0

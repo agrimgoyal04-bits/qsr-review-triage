@@ -1,0 +1,156 @@
+{
+  "stage": "router",
+  "base_model": "microsoft/deberta-v3-small",
+  "n_train": 20000,
+  "n_test": 4000,
+  "accuracy": 0.90375,
+  "macro_f1": 0.8748257661785513,
+  "labels": [
+    "order_accuracy",
+    "wait_time_service_speed",
+    "food_quality",
+    "cleanliness_hygiene",
+    "staff_attitude",
+    "price_value",
+    "other"
+  ],
+  "per_class": {
+    "order_accuracy": {
+      "precision": 0.8148148148148148,
+      "recall": 0.8407643312101911,
+      "f1-score": 0.8275862068965517,
+      "support": 314.0
+    },
+    "wait_time_service_speed": {
+      "precision": 0.9676898222940227,
+      "recall": 0.9208301306687163,
+      "f1-score": 0.9436786136274123,
+      "support": 1301.0
+    },
+    "food_quality": {
+      "precision": 0.9095238095238095,
+      "recall": 0.9080824088748018,
+      "f1-score": 0.908802537668517,
+      "support": 631.0
+    },
+    "cleanliness_hygiene": {
+      "precision": 0.8211678832116789,
+      "recall": 0.8653846153846154,
+      "f1-score": 0.8426966292134831,
+      "support": 260.0
+    },
+    "staff_attitude": {
+      "precision": 0.8158914728682171,
+      "recall": 0.8995726495726496,
+      "f1-score": 0.8556910569105691,
+      "support": 468.0
+    },
+    "price_value": {
+      "precision": 0.78,
+      "recall": 0.8540145985401459,
+      "f1-score": 0.8153310104529616,
+      "support": 137.0
+    },
+    "other": {
+      "precision": 0.9412442396313364,
+      "recall": 0.9190101237345332,
+      "f1-score": 0.9299943084803642,
+      "support": 889.0
+    },
+    "accuracy": 0.90375,
+    "macro avg": {
+      "precision": 0.8643331489062686,
+      "recall": 0.8868084082836647,
+      "f1-score": 0.8748257661785513,
+      "support": 4000.0
+    },
+    "weighted avg": {
+      "precision": 0.9069232056088798,
+      "recall": 0.90375,
+      "f1-score": 0.9047680433660916,
+      "support": 4000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      264,
+      11,
+      17,
+      2,
+      6,
+      4,
+      10
+    ],
+    [
+      18,
+      1198,
+      22,
+      21,
+      35,
+      2,
+      5
+    ],
+    [
+      4,
+      4,
+      573,
+      16,
+      14,
+      13,
+      7
+    ],
+    [
+      3,
+      4,
+      5,
+      225,
+      12,
+      1,
+      10
+    ],
+    [
+      16,
+      10,
+      2,
+      5,
+      421,
+      3,
+      11
+    ],
+    [
+      0,
+      3,
+      3,
+      2,
+      4,
+      117,
+      8
+    ],
+    [
+      19,
+      8,
+      8,
+      3,
+      24,
+      10,
+      817
+    ]
+  ],
+  "args": {
+    "stage": "router",
+    "model": "microsoft/deberta-v3-small",
+    "epochs": 2.0,
+    "batch_size": 16,
+    "lr": 3e-05,
+    "max_length": 256,
+    "pad_multiple": 64,
+    "max_train": 20000,
+    "max_eval": 4000,
+    "class_weights": true,
+    "out": null,
+    "seed": 42,
+    "cpu": false,
+    "keep_checkpoints": false
+  },
+  "label_note": "Labels are weak (stars/keywords). See README 'Caveats'."
+}

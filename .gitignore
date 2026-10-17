@@ -1,0 +1,24 @@
+# secrets / local config / private notes (kept locally, never committed)
+.env
+PERSONAL_NOTES.md
+
+# virtual environments, caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# generated: models, logs, diagnostics, backups
+models/*
+!models/.gitkeep
+logs/
+diagnostics.txt
+*.bak
+
+# generated from the Yelp Open Dataset (do NOT commit: Yelp's terms restrict redistribution).
+# Everything below is recreated by `python -m src.build_dataset`.
+data/raw/
+data/*.parquet
+data/gold_to_label.csv
+data/dataset_stats.json
